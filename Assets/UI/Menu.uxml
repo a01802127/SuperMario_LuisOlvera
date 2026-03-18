@@ -8,7 +8,7 @@
             <ui:Button text="Ayuda" name="ayuda" class="boton"/>
             <ui:Button text="Créditos" name="creditos" class="boton"/>
         </ui:VisualElement>
-        <ui:VisualElement name="contenedor" class="contenedor">
+        <ui:VisualElement name="contenedor" class="contenedor" style="display: flex;">
             <ui:Label text="Luis Alejandro Olvera Hernández (A01802127)" name="nombre" class="nombre"/>
             <ui:Button text="" name="boton-cerrar" class="boton-cerrar boton" style="background-image: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/white%20icon/close.png?fileID=2800000&amp;guid=7ed175332bcd6bb4e9f2b8e2833d8c29&amp;type=3#close&quot;);"/>
         </ui:VisualElement>
