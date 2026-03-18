@@ -1,0 +1,18 @@
+:root {
+}
+
+.juego {
+}
+
+.boton {
+}
+
+.boton:hover {
+    transition-duration: 0.36s;
+    scale: 1.15 1.15;
+}
+
+.boton:active {
+    transition-duration: 0.36s;
+    -unity-background-image-tint-color: rgba(0, 0, 0, 0.67);
+}

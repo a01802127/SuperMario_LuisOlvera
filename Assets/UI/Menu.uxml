@@ -1,0 +1,38 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/menu.uss?fileID=7433441132597879392&amp;guid=d7a97199b49d90549a137ce9f0070ec1&amp;type=3#menu"/>
+    <Style src="project://database/Assets/UI/menuAyuda.uss?fileID=7433441132597879392&amp;guid=85bcdf72bbb333a46b013ba893f25459&amp;type=3#menuAyuda"/>
+    <ui:VisualElement name="Menu" enabled="true" class="menu" style="flex-grow: 1; display: flex;">
+        <ui:Label text="Tarea Unity" name="titulo" class="titulo"/>
+        <ui:VisualElement name="botones" class="botones" style="flex-grow: 1; background-color: rgba(39, 39, 39, 0.25); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
+            <ui:Button text="Jugar" name="jugar" class="boton"/>
+            <ui:Button text="Ayuda" name="ayuda" class="boton"/>
+            <ui:Button text="Créditos" name="creditos" class="boton"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="contenedor" class="contenedor">
+            <ui:Label text="Luis Alejandro Olvera Hernández (A01802127)" name="nombre" class="nombre"/>
+            <ui:Button text="" name="boton-cerrar" class="boton-cerrar boton" style="background-image: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/white%20icon/close.png?fileID=2800000&amp;guid=7ed175332bcd6bb4e9f2b8e2833d8c29&amp;type=3#close&quot;);"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="MenuAyuda" enabled="true" class="menuAyuda" style="flex-grow: 1; display: none;">
+        <ui:Label text="Tarea Unity" name="titulo" class="titulo"/>
+        <ui:VisualElement name="texto" class="texto" style="flex-grow: 1; background-color: rgba(39, 39, 39, 0.25); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
+            <ui:Button text="" name="boton-atras" class="boton-cerrar boton" style="background-image: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/white%20icon/close.png?fileID=2800000&amp;guid=7ed175332bcd6bb4e9f2b8e2833d8c29&amp;type=3#close&quot;); justify-content: flex-start; align-items: auto; display: flex; top: 34px; left: 1034px; position: absolute;"/>
+            <ui:Label text="Instrucciones de Juego&#10;&#10;Controles:&#10;Moverse: Usa las teclas A y D.&#10;Saltar: Presiona la tecla Espacio.&#10;&#10;Objetivo: Evita tocar al goomba.&#10;&#10;Desarrollado por: Luis Olvera" style="color: rgb(255, 255, 255); font-size: 30px; align-items: stretch; justify-content: space-evenly; top: auto;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="contenedor" class="contenedor">
+            <ui:Label text="Luis Alejandro Olvera Hernández (A01802127)" name="nombre" class="nombre"/>
+            <ui:Button text="" name="boton-cerrar" class="boton-cerrar boton" style="background-image: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/white%20icon/close.png?fileID=2800000&amp;guid=7ed175332bcd6bb4e9f2b8e2833d8c29&amp;type=3#close&quot;);"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="MenuCreditos" style="flex-grow: 1; display: none; overflow: hidden;">
+        <ui:VisualElement name="conte" style="flex-grow: 1; background-color: rgb(116, 112, 112);">
+            <ui:VisualElement name="titulocreditos" style="flex-grow: 1; width: auto; height: 20%; max-height: 20%; min-height: 20px; border-left-color: rgb(26, 26, 26); border-right-color: rgb(26, 26, 26); border-top-color: rgb(26, 26, 26); border-bottom-color: rgb(26, 26, 26); border-top-width: 0; border-right-width: 0; border-bottom-width: 10px; border-left-width: 0;">
+                <ui:Label text="Créditos&#10;" picking-mode="Ignore" style="-unity-background-image-tint-color: rgb(207, 191, 12); color: rgb(174, 162, 21); font-size: 100px; -unity-text-align: upper-center; top: 30px;"/>
+                <ui:Button text="" name="boton-atras" class="boton-cerrar boton" style="background-image: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/white%20icon/close.png?fileID=2800000&amp;guid=7ed175332bcd6bb4e9f2b8e2833d8c29&amp;type=3#close&quot;); justify-content: flex-start; align-items: auto; display: flex; top: 28px; left: 1809px; position: absolute;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="textocreditos" picking-mode="Position" style="flex-grow: 1; display: flex; overflow: hidden;">
+                <ui:Label text="PROYECTO: TAREA UNITY&#10;&#10;DESARROLLADO POR:&#10;Luis Alejandro Olvera Hernández&#10;&#10;MATERIA:&#10;Construcción de software y toma de decisiones&#10;(Gpo 402)&#10;&#10;PROFESOR:&#10;Roberto Martínez Román&#10;&#10;RECURSOS:&#10;Este proyecto es una práctica académica individual.&#10;El arte y personajes originales pertenecen a Nintendo.&#10;&#10;ESTADO DEL SISTEMA:&#10;Compilación Exitosa 2026&#10;¡Gracias por revisar mi tarea!&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" name="texto-deslizante" picking-mode="Position" style="position: absolute; top: 4px; left: 314px; color: rgb(175, 162, 21); font-size: 50px; -unity-text-align: upper-center; height: 898px; overflow: hidden; visibility: visible;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

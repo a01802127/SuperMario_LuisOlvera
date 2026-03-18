@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/juego.uss?fileID=7433441132597879392&amp;guid=57cae570b975c1d45960913c9279ec9b&amp;type=3#juego"/>
+    <ui:VisualElement name="juego" class="juego" style="flex-grow: 1;">
+        <ui:Button text="Regresar" name="boton-menu" class="boton" style="color: rgb(255, 255, 255); font-size: 25px; background-image: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/Button%206/1.png?fileID=2800000&amp;guid=2f77c76372d0a7449a3a238ab605f3a9&amp;type=3#1&quot;); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; align-items: stretch; align-self: flex-start; justify-content: flex-start; align-content: stretch; background-color: rgba(188, 188, 188, 0); width: 200px; height: 100px; position: absolute; top: 974px; left: 2px;"/>
+    </ui:VisualElement>
+</ui:UXML>
