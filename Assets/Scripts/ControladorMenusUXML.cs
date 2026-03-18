@@ -27,11 +27,9 @@ public class ControladorMenusUXML : MonoBehaviour
         Button btnAyuda = root.Q<Button>("ayuda");
         Button btnCreditos = root.Q<Button>("creditos");
 
-        // Botones para regresar al menú principal
         Button btnAtrasAyuda = menuAyuda.Q<Button>("boton-atras");
         Button btnAtrasCreditos = menuCreditos.Q<Button>("boton-atras");
 
-        // Botones para cerrar la simulación
         Button btnCerrarMenu = menuPrincipal.Q<Button>("boton-cerrar");
         Button btnCerrarAyuda = menuAyuda.Q<Button>("boton-cerrar");
 
@@ -72,17 +70,13 @@ public class ControladorMenusUXML : MonoBehaviour
             };
         }
 
-        // Asignar función de salida a ambos botones de cerrar
         if (btnCerrarMenu != null) btnCerrarMenu.clicked += SalirDelJuego;
         if (btnCerrarAyuda != null) btnCerrarAyuda.clicked += SalirDelJuego;
     }
 
     void SalirDelJuego()
     {
-        // Esto cierra el juego en el archivo .exe ya construido
         Application.Quit();
-
-        // Esto detiene la reproducción si estás dentro del editor de Unity
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
         #endif
