@@ -26,6 +26,7 @@ public class ControladorMenusUXML : MonoBehaviour
         Button btnJugar = root.Q<Button>("jugar");
         Button btnAyuda = root.Q<Button>("ayuda");
         Button btnCreditos = root.Q<Button>("creditos");
+        Button btnGithub = root.Q<Button>("github");
 
         Button btnAtrasAyuda = menuAyuda.Q<Button>("boton-atras");
         Button btnAtrasCreditos = menuCreditos.Q<Button>("boton-atras");
@@ -34,6 +35,11 @@ public class ControladorMenusUXML : MonoBehaviour
         Button btnCerrarAyuda = menuAyuda.Q<Button>("boton-cerrar");
 
         if (btnJugar != null) btnJugar.clicked += () => SceneManager.LoadScene("SampleScene");
+
+        if (btnGithub != null)
+        {
+            btnGithub.clicked += () => Application.OpenURL("https://github.com/a01802127/SuperMario_LuisOlvera");
+        }
 
         if (btnAyuda != null)
         {
